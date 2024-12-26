@@ -1,3 +1,2 @@
-[Diary](./diary/diary.md)
 
 
