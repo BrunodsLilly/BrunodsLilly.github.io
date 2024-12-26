@@ -10,3 +10,7 @@
 ## bioinformatics
 
 - [bioinformatics](diary/2024-12-26#bioinformatics)
+
+## temporal
+
+- [temporal](diary/2024-12-26#temporal)
