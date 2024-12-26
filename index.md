@@ -1,9 +1,12 @@
+# Diary
+[index](./diary/diary.md)
+
 # Generated Tags
 
 ## antibody
 
-- [Antibody annotation](diary/2024-12-26#antibody-annotation)
+- [antibody](diary/2024-12-26#antibody)
 
 ## bioinformatics
 
-- [Antibody annotation](diary/2024-12-26#antibody-annotation)
+- [bioinformatics](diary/2024-12-26#bioinformatics)
