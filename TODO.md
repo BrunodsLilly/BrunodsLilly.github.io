@@ -1,0 +1,16 @@
+- [ ] 2025-01-03 04:37 implement Heartbeating for process_manifest activity.
+- [ ] 2025-01-03 04:38 Create a Plan for Scaling Temporal.
+- [ ] 2025-01-03 04:38 When aligning antibodies to ref db, I want to get the top N sequences instead of top sequence.
+- [ ] 2025-01-03 04:38 Sensitivity analysis of Primary Ab Selection.
+- [ ] 2025-01-05 12:25 Update how I save Ab files. Use tempfiles NamedFiles
+- [ ] 2025-01-05 12:25 Update downloaded ab file names.
+- [ ] 2025-01-05 12:25 Move ProcessNGSData to a microservice.
+- [ ] 2025-01-05 12:26 Move run_ab_annotation to ANARCI microservice.
+- [ ] 2025-01-05 12:31 Move germline worker to germline microservice.
+- [ ] 2025-01-05 12:32 Test NGS Experiment.
+- [ ] 2025-01-05 12:33 Update run_ab_annotation start-to-close timeout.
+- [ ] 2025-01-05 13:27 Germlining delete files when done.
+- [ ] 2025-01-05 18:45 Add Ab selection activity.
+- [ ] 2025-01-06 15:43 NGS Experiment Comparison Tool.
+- [ ] 2025-01-06 15:51 Upload external experiment data.
+- [ ] 2025-01-07 07:53 Update germlining code.

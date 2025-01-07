@@ -1,5 +1,7 @@
-# Diary
-[index](./diary/diary.md)
+# Nav
+- [Diary](./diary/diary.md)
+- [TODO](TODO)
+- [Open questions](questions)
 
 # Generated Tags
 
