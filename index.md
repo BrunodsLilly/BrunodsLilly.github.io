@@ -1,2 +1,2 @@
-- [Fleeting notes](fleeting_notes.md)
-- 
+Navigation
+- [Diary](diary/diary.md)
