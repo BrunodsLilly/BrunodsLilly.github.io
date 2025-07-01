@@ -1,0 +1,34 @@
+# _config.yml
+title: My Second Brain
+description: My personal notes and knowledge base
+url: "https://BrunodsLilly.github.io" # CHANGE THIS to your GitHub Pages URL
+baseurl: "" # CHANGE THIS if your repo name is not the same as your GitHub Pages URL path
+                           # For user/org pages (your-username.github.io), leave baseurl empty: baseurl: ""
+
+# Theme settings (optional, but recommended for a quick start)
+# Many themes are available: https://pages.github.com/themes/
+# Example: Using the "minima" theme
+theme: minima
+
+# Exclude files/folders that aren't part of your site build
+exclude:
+  - README.md
+  - LICENSE
+  - .git/
+  - .github/
+  - node_modules/ # If you have any build tools
+
+# Markdown processor settings
+markdown: GFM # GitHub Flavored Markdown (recommended for Vimwiki files)
+kramdown:
+  input: GFM
+
+# Permalinks for your pages (e.g., /my-note/ rather than /my-note.html)
+permalink: pretty
+
+# Optional: Add your navigation links here
+# These will be used by themes that support a navigation bar
+header_pages:
+  - index.md
+  - another_important_note.md # Assuming you have a file like this
+  - diary.md
