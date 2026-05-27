@@ -1,4 +1,4 @@
-.PHONY: manifest serve dev clean
+.PHONY: manifest serve dev test clean
 
 manifest:
 	node scripts/generate-manifest.mjs
@@ -6,7 +6,10 @@ manifest:
 serve:
 	npx serve web
 
-dev: manifest serve
+test:
+	node --test $(shell find tests -name '*.test.mjs')
+
+dev: test manifest serve
 
 clean:
 	rm -f web/pages/manifest.json

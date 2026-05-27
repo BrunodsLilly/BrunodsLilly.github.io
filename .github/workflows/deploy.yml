@@ -30,6 +30,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Run tests
+        run: make test
+
       - name: Generate manifest
         run: make manifest
 
