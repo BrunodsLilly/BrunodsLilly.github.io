@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PAGES_DIR = join(__dirname, "../web/pages");
+const EXPLORATIONS_DIR = join(__dirname, "../../exploration");
 const MANIFEST_PATH = join(PAGES_DIR, "manifest.json");
 
 function extractTitle(html, filename) {
@@ -19,7 +20,7 @@ const manifest = await Promise.all(
   files.map(async (file) => {
     const html = await readFile(join(PAGES_DIR, file), "utf-8");
     return { file, title: extractTitle(html, file) };
-  })
+  }),
 );
 
 await writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));

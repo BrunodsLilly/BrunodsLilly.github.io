@@ -143,6 +143,38 @@ Some journeys require collecting data along the way. For these:
 
 ---
 
+## Explorations
+
+Every new project gets its own directory under `explorations/<project>/` containing
+two files:
+
+**`README.md`** — current state. Rewritten as the project evolves.
+- What the project is
+- Where it currently stands
+- How to run it
+- Key design decisions in effect
+
+**`ideation.log`** — append-only chronological record. Never edited, only added to.
+Each entry is lightly structured:
+
+```
+[YYYY-MM-DD] #tag
+note here, free prose
+```
+
+Tags: `#idea` `#decision` `#question` `#observation` `#dead-end`
+
+After every meaningful session, append a few lines to the log. Update the README
+when the state of the project meaningfully changes.
+
+When a project graduates to its own repo, `explorations/<project>/` travels with
+it as provenance.
+
+The agent helps maintain these files — suggesting log entries, keeping README
+current — but the human writes the entries that reflect their own understanding.
+
+---
+
 ## Tone
 
 Direct. No filler. No "great question!".

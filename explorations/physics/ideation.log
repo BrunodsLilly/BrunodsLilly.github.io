@@ -1,0 +1,48 @@
+[2026-05-26] #idea
+Starting point: particle simulation in vanilla JS + Canvas. No frameworks, no
+physics libraries. The interesting code is the physics — using a library would
+give away the point.
+
+[2026-05-26] #decision
+Canvas 2D over WebGL. Performance is not the goal here — understanding the
+simulation loop and numerical methods is.
+
+[2026-05-26] #decision
+Start with Euler integration. It's the simplest possible integrator and it will
+visibly break under certain conditions (large timesteps, fast collisions). That
+breakdown is informative — it motivates improving the method rather than
+understanding the improvement in the abstract.
+
+[2026-05-26] #decision
+Separate logic from rendering from the start. The integrator lives in
+web/lib/Physics.mjs and knows nothing about Canvas. The renderer in
+web/apps/physics/ consumes it. This keeps the physics testable in Node.
+
+[2026-05-26] #decision
+Write Vec2 from scratch. A linear algebra library would remove the interesting
+parts of implementing a physics sim. Vec2 is small enough to own completely.
+
+[2026-05-26] #question
+What integration methods exist beyond Euler? When does Euler visibly fail —
+what will we observe? Candidates to explore later: Verlet, RK4, symplectic
+Euler. Each has different energy conservation properties.
+
+[2026-05-26] #idea
+Intended progression: static ball → moving → bouncing → two bodies →
+configurable dt → stress test → observe breakdown → improve. Each step is
+a working state. Nothing skipped.
+
+[2026-05-26] #observation
+This problem may have computationally irreducible regions — particularly once
+multiple bodies interact. No amount of planning will predict what emerges.
+The simulation has to run.
+
+[2026-05-26] #question
+At what point does this become an n-body problem? Two balls bouncing is
+trivial. Ten? A hundred? Where does interesting emergent behaviour appear?
+
+[2026-05-26] #idea
+Candidates noted for later: rigid bodies (rotation, torque, collision response),
+soft bodies / cloth (spring networks), orbital / n-body (gravity wells, chaos),
+fluid (Navier-Stokes — hardest, deferred). These are not goals — they are
+possible destinations depending on what the simulation reveals.
